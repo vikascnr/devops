@@ -1,0 +1,9 @@
+az vm create \
+    --resource-group myResourceGroupLB \
+    --name myVM2 \
+    --nics myNicVM2 \
+    --image UbuntuLTS \
+    --generate-ssh-keys \
+    --custom-data cloud-init.txt \
+    --zone 2 \
+    --no-wait

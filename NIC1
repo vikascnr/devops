@@ -1,0 +1,6 @@
+az network nic create \
+    --resource-group myResourceGroupLB \
+    --name myNicVM1 \
+    --vnet-name myVNet \
+    --subnet myBackEndSubnet \
+    --network-security-group myNSG

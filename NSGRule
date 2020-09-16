@@ -1,0 +1,12 @@
+az network nsg rule create \
+    --resource-group myResourceGroupLB \
+    --nsg-name myNSG \
+    --name myNSGRuleHTTP \
+    --protocol '*' \
+    --direction inbound \
+    --source-address-prefix '*' \
+    --source-port-range '*' \
+    --destination-address-prefix '*' \
+    --destination-port-range 80 \
+    --access allow \
+    --priority 200
